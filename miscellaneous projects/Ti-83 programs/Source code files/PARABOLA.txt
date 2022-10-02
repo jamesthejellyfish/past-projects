@@ -1,0 +1,22 @@
+PlotsOn 1
+ClrDraw
+AxesOff
+Prompt V
+Prompt A
+Vcos(A)->X
+Vsin(A)->Y
+Y/4.905->D
+Y^^2/(2(9.81))->E
+XD->C
+seq(XT,T,0,D+D/20,D/20)->L1
+seq(YT+(~4.905)T^^2,T,0,D+D/20,D/20)->L2
+~0.5C->Xmin
+1.2C->Xmax
+0->Ymin
+1.2E->Ymax
+Text(0,0,"T:")
+Text(0,7,D)
+Text(6,0,"H:")
+Text(6,7,E)
+Text(12,0,"D:"
+Text(12,6,C)

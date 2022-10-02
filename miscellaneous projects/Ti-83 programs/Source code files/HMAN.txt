@@ -1,0 +1,78 @@
+0->A
+0->B
+Asm(prgmZLOCK)
+RecallGDB GDB6
+ClrDraw
+RecallPic Pic5
+
+Input Str1
+ClrHome
+length(Str1)->dim(L6)
+For(I,1,length(Str1)
+	
+	
+	Line(~5+6I,3,~1+6I,3)
+	
+End
+
+0->dim(L5)
+inString(Str1," ")
+Repeat not(Ans)
+	Ans->L5(1+dim(L5))
+	inString(Str1," ",Ans+1)
+End
+For(I,1,dim(L5)
+	Line(~5+6L5(I),3,~1+6L5(I),3,0)
+End
+Lbl V
+If B=1:Then:Circle(33,47,4,{[i]}):End
+If B=2:Then:Line(33,43,33,33):End
+If B=3:Then:Line(33,33,29,25):End
+If B=4:Then:Line(33,33,36,25):End
+If B=5:Then:Line(29,38,33,38):End
+If B=6:Then:Line(37,38,33,38):End
+0->K
+While K=0
+	getKey->K
+End
+If K=41:Then:"A"->Str2:End
+If K=42:Then:"B"->Str2:End
+If K=43:Then:"C"->Str2:End
+If K=51:Then:"D"->Str2:End
+If K=52:Then:"E"->Str2:End
+If K=53:Then:"F"->Str2:End
+If K=54:Then:"G"->Str2:End
+If K=55:Then:"H"->Str2:End
+If K=61:Then:"I"->Str2:End
+If K=62:Then:"J"->Str2:End
+If K=63:Then:"K"->Str2:End
+If K=64:Then:"L"->Str2:End
+If K=65:Then:"M"->Str2:End
+If K=71:Then:"N"->Str2:End
+If K=72:Then:"O"->Str2:End
+If K=73:Then:"P"->Str2:End
+If K=74:Then:"Q"->Str2:End
+If K=75:Then:"R"->Str2:End
+If K=81:Then:"S"->Str2:End
+If K=82:Then:"T"->Str2:End
+If K=83:Then:"U"->Str2:End
+If K=84:Then:"V"->Str2:End
+If K=85:Then:"W"->Str2:End
+If K=91:Then:"X"->Str2:End
+If K=92:Then:"Y"->Str2:End
+If K=93:Then:"Z"->Str2:End
+If K=105:Then:Asm(prgmZLOCK):Input Str2:If Str1=Str2:Then:Disp "YOU GUESSED IT!":Stop:Else:"theta"->Str2:End:End
+Text(10+8iPart(A/9),45+5A-45iPart(A/9),Str2)
+A+1->A
+
+0->dim(L5)
+If inString(Str1,Str2)=0:Then:B+1->B:Goto V:End
+inString(Str1,Str2)
+Repeat not(Ans)
+	Ans->L5(1+dim(L5))
+	inString(Str1,Str2,Ans+1)
+End
+For(I,1,dim(L5))
+	Text(52,6L5(I)-4,Str2)
+End
+Goto V

@@ -1,0 +1,155 @@
+0->Y:0->Z:0->theta:0->T:0->U:0->V:0->O:0->P:0->Q:0->B
+ClrDraw
+StoreGDB GDB0
+RecallGDB GDB9
+
+GridOff
+AxesOff
+Line(3.5,1,3.5,9)
+Line(6.5,1,6.5,9)
+Line(1,3.5,9,3.5)
+Line(1,6.5,9,6.5)
+While 1
+	getKey->H
+	If H=45:Then
+		Disp "":ClrDraw:AxesOn:RecallGDB GDB0:Stop
+	End
+	If (B=0):Then
+		If (H=92) and (Y=0):Then
+			Line(1.59,2.90,2.65,1.45):Line(1.59,1.45,2.65,2.90)
+			1->Y:1->B
+		End
+		If (H=93) and (Z=0):Then
+			Line(4.46,2.90,5.53,1.45)
+			Line(4.46,1.45,5.53,2.90)
+			1->Z
+			1->B
+		End
+		If (H=94) and (theta=0):Then
+			Line(7.44,2.90,8.53,1.45)
+			Line(7.44,1.45,8.53,2.90)
+			1->theta
+			1->B
+		End
+		If (H=82) and (T=0):Then
+			Line(1.59,5.8,2.65,4.19)
+			Line(1.59,4.19,2.65,5.8)
+		1->T:1->B:End
+		If (H=83) and (U=0):Then
+			Line(4.46,5.8,5.53,4.19)
+			Line(4.46,4.19,5.53,5.8)
+		1->U:1->B:End
+		If H=84 and V=0:Then
+			Line(7.44,5.8,8.51,4.19)
+			Line(7.44,4.19,8.53,5.8)
+			1->V
+		1->B:End
+		If H=72 and O=0:Then
+			Line(1.59,8.87,2.68,7.25)
+			Line(1.59,7.25,2.65,8.87)
+			1->O
+		1->B:End
+		If H=73 and P=0:Then
+			Line(4.46,8.87,5.53,7.25)
+			Line(4.46,7.25,5.53,8.87)
+		1->P:1->B:End
+		If H=74 and Q=0:Then
+			Line(7.44,8.87,8.53,7.25)
+			Line(7.44,7.25,8.53,8.87)
+			1->Q
+		1->B:End
+	End
+	If B=1:Then
+		If H=92 and Y=0:Then
+			Circle(2.12,2.09,0.97,{[i]})
+		2->Y:0->B:End
+		If H=93 and Z=0:Then
+			Circle(5,2.09,0.97,{[i]})
+			2->Z
+			0->B
+		End
+		If H=94 and theta=0:Then
+			Circle(7.87,2.09,0.97,{[i]})
+			2->theta
+			0->B
+		End
+		If H=82 and T=0:Then
+			Circle(2.12,4.83,0.97,{[i]})
+			2->T:0->B
+		End
+		If H=83 and U=0:Then
+			Circle(5,4.83,0.97,{[i]})
+			2->U:0->B
+		End
+		If H=84 and V=0:Then
+			Circle(7.87,4.83,0.97,{[i]})
+			2->V:0->B
+		End
+		If H=72 and O=0:Then
+			Circle(2.12,7.9,0.97,{[i]})
+			2->O:0->B
+		End
+		If H=73 and P=0:Then
+			Circle(5,7.9,0.97,{[i]})
+			2->P:0->B
+		End
+		If H=74 and Q=0:Then
+			Circle(7.87,7.9,0.97,{[i]})
+			2->Q:0->B
+		End
+	End
+	If O=1 and T=1 and Y=1:Then
+		Line(2.12,0.96,2.12,9.03)
+	Else
+		If O=1 and P=1 and Q=1:Then
+			Line(2.14,8.06,7.97,8.06)
+		Else
+			If P=1 and U=1 and Z=1:Then
+				Line(5,8.06,5,2.096)
+			Else
+				If Q=1 and V=1 and theta=1:Then
+				Line(7.87,1.77,7.87,8.7):Else
+					If Q=1 and U=1 and Y=1:Then
+						Line(7.97,8.06,2.23,2.096)
+					Else
+						If O=1 and U=1 and theta=1:Then
+							Line(2.12,8.06,7.97,1.93)
+						Else
+							If O=1 and U=1 and theta=1:Then
+								Line(2.12,8.06,7.97,1.93)
+							Else
+								If T=1 and U=1 and V=1:Then
+									Line(7.87,4.83,1.48,4.83)
+								Else
+									If Y=1 and Z=1 and theta=1:Then
+										Line(1.38,2.096,8.61,2.096)
+									Else
+										If O=2 and T=2 and Y=2:Then
+											Line(2.12,0.96,2.12,9.03)
+										Else
+											If O=2 and P=2 and Q=2:Then
+												Line(2.12,8.06,7.97,8.06)
+											Else
+												If P=2 and U=2 and Z=2:Then
+													Line(5,8.06,5,2.096)
+												Else
+													If Q=2 and V=2 and theta=2:Then
+														Line(7.87,1.77,7.87,8.7)
+													Else
+														If Q=2 and U=2 and Y=2:Then
+															Line(7.97,8.06,2.23,2.096)
+														Else
+															If O=2 and U=2 and theta=2:Then
+																Line(2.12,8.06,7.97,1.93)
+															Else
+																If T=2 and U=2 and V=2:Then
+																	Line(7.87,4.83,1.48,4.83)
+																Else
+																	If Y=2 and Z=2 and theta=2:Then
+																		Line(1.38,2.096,8.61,2.096)
+																	Else
+																		If Y!=0 and Z!=0 and theta!=0 and T!=0 and U!=0 and V!=0 and O!=0 and P!=0 and Q!=0:Then
+																			Disp "DRAW":ClrDraw:AxesOn:RecallGDB GDB0:Stop
+		End:End:End:End:End:End:End:End:End:End:End:End:End:End:End:End:End
+	End
+End

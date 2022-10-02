@@ -1,0 +1,3 @@
+Created: November 30, 2021
+
+Inspiration: when sitting in a lecture, I was informed that LaTeX was Turing-complete. This inspired me to think about how you could create games in a pdf through LaTeX or other means. When researching, I learned that adobe pdfs can execute Javascript code after a certain action is triggered. I quickly programmed up this as a proof-of-concept.

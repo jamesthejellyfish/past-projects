@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?><transcript><text start="0.08" dur="2.48">Last week, I put up a video that was filmed
+here</text><text start="2.56" dur="2.399">at the Cambridge Centre for Computing History.</text><text start="4.959" dur="2.974">And folks seemed to like the video, but a
+few comments made it clear</text><text start="7.94" dur="1.48">that there was a slight problem.</text><text start="9.42" dur="3.3">And it was a problem that made me
+really angry with myself.</text><text start="12.72" dur="3.46">There was a very subtle high-pitched noise
+in the background of the video,</text><text start="16.18" dur="2.32">and I hadn&amp;#39;t noticed it before uploading.</text><text start="18.5" dur="1.32">So I thought I should explain why:</text><text start="19.82" dur="2.53">first, why the noise was there at all,</text><text start="22.35" dur="3.03">and second, why I didn&amp;#39;t notice it.</text><text start="25.38" dur="5.42">This museum is filled with old computers with
+cathode ray tube screens: CRTs.</text><text start="30.8" dur="1.889">Some of these screens are
+specialised computer monitors,</text><text start="32.689" dur="3.491">but others, like these over here, are basically
+just old-school televisions.</text><text start="36.18" dur="2.71">At the back of each monitor
+is an electron gun,</text><text start="38.89" dur="1.96">and it fires out a beam of electrons.</text><text start="40.85" dur="3.42">Wherever they hit,
+the phosphors on the screen light up.</text><text start="44.27" dur="1.66">But the electron gun doesn&amp;#39;t move at all.</text><text start="45.93" dur="1.53">It couldn&amp;#39;t possibly move fast enough.</text><text start="47.46" dur="2.4">Instead, it just fires in one direction,</text><text start="49.86" dur="3.019">and electromagnets bend the beam of electrons.</text><text start="52.879" dur="3.101">The more power that&amp;#39;s sent to the magnets,
+the more the beam bends.</text><text start="55.98" dur="3.38">So for every frame of video,
+that beam scans the whole screen,</text><text start="59.36" dur="2.06">left to right, top to bottom.</text><text start="61.42" dur="1.61">I&amp;#39;m going to ignore the vertical movement,</text><text start="63.03" dur="2.34">what we&amp;#39;re interested in is the horizontal.</text><text start="65.37" dur="3.72">Inside there is a clever bit of kit called
+a flyback transformer.</text><text start="69.09" dur="2.22">It outputs a sawtooth signal to the electromagnet,</text><text start="71.31" dur="3.739">which means that it ramps up, and then drops
+very quickly back down.</text><text start="75.049" dur="3.81">And as it ramps up, the electromagnet bends
+the beam across the screen</text><text start="78.859" dur="3.55">before it quickly snaps straight back ready
+for the next line.</text><text start="82.409" dur="5.73">That electron beam scans across 625 lines
+of the TV signal, 25 times a second,</text><text start="88.139" dur="7.18">so that flyback transformer needs to
+ramp up and drop down 15,625 times a second.</text><text start="95.319" dur="3.061">And because of something called magnetostriction,</text><text start="98.38" dur="4.71">it changes shape a tiny, tiny, tiny amount
+every time it does that,</text><text start="103.09" dur="3.329">which generates a noise
+at that high-pitched frequency.</text><text start="106.419" dur="3.23">It&amp;#39;s the same frequency that
+every old-school TV produces.</text><text start="109.649" dur="1">At least in Europe.</text><text start="110.649" dur="1.411">The numbers in America are a little different,</text><text start="112.06" dur="2.199">but they still end up at about the same frequency.</text><text start="114.259" dur="2.16">Now, with modern audio editing tools</text><text start="116.419" dur="4.261">it is really easy to isolate that frequency
+and remove it.</text><text start="120.68" dur="3.59">Until now, I&amp;#39;ve been removing it
+from this video, but let me tell you:</text><text start="124.27" dur="4.09">it&amp;#39;s here, and in this room,
+with all these monitors on, it is loud.</text><text start="130.3" dur="1.76">Now I knew the sound was recorded originally,</text><text start="132.069" dur="3.601">because I could hear it in this room, I knew
+my microphone was picking it up.</text><text start="135.67" dur="4.03">I just thought the automatic noise reduction
+stuff I use would take care of it.</text><text start="139.7" dur="3.8">It didn&amp;#39;t: but it also turns out these headphones
+that I use to check audio</text><text start="143.5" dur="1.81">aren&amp;#39;t great at high frequencies,</text><text start="145.31" dur="4.069">and so with my voice drowning it out I just
+didn&amp;#39;t notice the sound.</text><text start="149.379" dur="3.601">There aren&amp;#39;t many quiet bits in that video,
+I don&amp;#39;t shut up.</text><text start="152.98" dur="3.02">And for a while, I was angry with myself,
+because it was an unforced error.</text><text start="156" dur="3.349">I wasn&amp;#39;t under time pressure,
+I checked through half a dozen times,</text><text start="159.349" dur="3.961">I just didn&amp;#39;t think to check the sound
+with my eyes.</text><text start="163.31" dur="4.53">That mistake might have stopped the message
+getting as far as it could.</text><text start="167.84" dur="2.53">But I think there was another reason
+that I was angry.</text><text start="170.37" dur="3.21">Spider Robinson once wrote that
+&amp;quot;anger is fear in disguise&amp;quot;,</text><text start="173.58" dur="2.57">and I&amp;#39;m not sure that&amp;#39;s always true, but...</text><text start="176.15" dur="2.39">it wasn&amp;#39;t just my headphones.</text><text start="178.54" dur="2.619">As you get older, your range of hearing 
+starts to narrow.</text><text start="181.159" dur="2.731">It starts to get more difficult
+to hear high frequencies.</text><text start="183.89" dur="3">And I used to pride myself
+on how good my hearing was,</text><text start="186.89" dur="3.519">I could hear higher frequencies than I was
+supposed to for my age.</text><text start="190.409" dur="4.45">Those 17,000Hz mosquito alarms designed to
+make teenagers go away,</text><text start="194.859" dur="1.871">they irritated me through my twenties.</text><text start="196.73" dur="4.28">And, sure, I can hear the loud, high-pitched
+noise here, &amp;#39;cos it&amp;#39;s really obvious,</text><text start="201.01" dur="2.16">but in that video?</text><text start="203.17" dur="1">Nope.</text><text start="204.17" dur="2.989">I have to strain to even notice it, even as
+some folks in the comments</text><text start="207.159" dur="2.75">said it was loud enough to stop them watching.</text><text start="209.909" dur="1.651">I did a hearing test.</text><text start="211.56" dur="2.48">I can&amp;#39;t hear mosquito alarms any more.</text><text start="214.04" dur="2.529">I can&amp;#39;t hear anything higher than these monitors.</text><text start="216.569" dur="3.431">That video, that mistake I made,</text><text start="220" dur="4.11">was a sudden and sharp reminder
+that I&amp;#39;m getting older.</text><text start="224.11" dur="4.329">That some of the things I used to do,
+I can&amp;#39;t any more.</text><text start="228.439" dur="1.77">So protect your hearing,</text><text start="230.209" dur="2.56">and next time someone forgets to check for</text><text start="232.769" dur="2.86">a high pitched noise in the background and
+it annoys you...</text><text start="235.629" dur="2.65">well, at least you can still hear it.</text></transcript>

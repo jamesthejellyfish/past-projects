@@ -1,0 +1,98 @@
+1->T
+pi->C
+StoreGDB GDB1
+Disp "ENTIRE RADICAL:"
+Input Str1
+If inString(Str1,"sqrt(")!=0:Then
+	2->N
+Else
+	If inString(Str1,"cuberoot(")!=0:Then
+		3->N
+	Else
+		If inString(Str1,"xroot")!=0:Then
+			Str1->Str5
+			sub(Str5,1,inString(Str5,"xroot")-1->Str5
+			If inString(Str5,"(")!=0:Then
+				inString(Str5,"("->J
+				sub(Str5,J+1,length(Str5)-J)->Str5
+			End
+			
+			String>Equ(Str5,{Y1})
+			{Y1}->N
+		End
+	End
+End
+
+String>Equ(Str1,{Y1})
+{Y1}->A
+RecallGDB GDB1
+abs(A)->A
+A^N->B
+iPart(A)->A
+A->D
+While int(C)!=C and fPart(C)<0.99999
+	B/A^N->C
+	A-1->A
+	If A=0 and int(C)!=C and fPart(C)<0.99999:Then
+		Disp "ERROR"
+		Disp "LOG OUTPUT TO"
+		Disp "LIST"
+		seq(B/A^N,A,D,1,~1)->L6
+		seq(A^N,A,D,1,~1)->L5
+		Stop
+	End
+	
+End
+round(C,5)->C
+A+1->A
+If NxrootB!=A*NxrootC
+Then
+	Disp "ERROR"
+	seq(B/A^N,A,D,1,~1)->L6
+	seq(A^N,A,D,1,~1)->L5
+	Stop
+End
+{0,1->L1
+AL1->L2
+LinReg(ax+b) {Y1}
+Equ>String({Y1},Str1
+sub(Str1,1,length(Str1)-3)->Str1
+
+{0,1->L1
+CL1->L2
+LinReg(ax+b) {Y1}
+Equ>String({Y1},Str2
+sub(Str2,1,length(Str2)-3->Str2
+
+{0,1->L1
+NL1->L2
+LinReg(ax+b) {Y1}
+Equ>String({Y1},Str3)
+sub(Str3,1,length(Str3)-3->Str3
+If C=1:Then
+	Str1->Str4
+	
+Else
+	If A=1:Then
+		If N=2:Then
+			"sqrt("+Str2+")"->Str4
+		Else
+			If N=3:Then
+				"cuberoot("+Str2+")"->Str4
+			Else
+				Str3+"xroot"+Str2->Str4
+		End:End
+	Else
+		If N=2:Then
+			Str1+"sqrt("+Str2+")"->Str4
+		Else
+			If N=3:Then
+				Str1+"cuberoot("+Str2+")"->Str4
+			Else
+				Str1+"("+Str3+"xroot"+Str2+")"->Str4
+			End
+		End
+	End
+End
+Disp Str4
+RecallGDB GDB1

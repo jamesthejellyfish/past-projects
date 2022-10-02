@@ -1,0 +1,5 @@
+Created: March 2016
+
+inspiration: my first ever foray into creating games using the construct2 engine.
+
+can be played at jamescox.ca/projects/fruitgame

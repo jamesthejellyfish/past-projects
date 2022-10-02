@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?><transcript><text start="0.08" dur="2.64">When Tim Berners-Lee pr…</text><text start="5.32" dur="1.6">When Tim Berners-Lee prop…</text><text start="8.6" dur="2.2">When T…</text><text start="15.52" dur="0.8">When Tim Bern…</text><text start="16.32" dur="0.96">oh come on!</text><text start="20.48" dur="4.32">When Tim Berners-Lee proposed the idea 
+for the World Wide Web back in 1989,  </text><text start="24.8" dur="4.8">he wrote about a “universal linked 
+information system”. His exact words:  </text><text start="29.6" dur="3.04">“a place to be found for any 
+information or reference which  </text><text start="32.64" dur="3.36">one felt was important, and a 
+way of finding it afterwards”.</text><text start="37.12" dur="6">Three decades later, and you’ve possibly 
+noticed that the web is a bit of a mess.</text><text start="43.12" dur="3.76">What happened to that 
+universal information system?  </text><text start="46.88" dur="2.88">What even is a cookie, and 
+why do we need to accept them?</text><text start="50.64" dur="3.12">There are two reasons that 
+the web is terrible right now:</text><text start="53.76" dur="4.08">first, advertisers. And second, people.</text><text start="58.64" dur="2.56">...I actually just realised that I just
+implied that</text><text start="61.2" dur="1.84">advertisers are not people,  </text><text start="63.04" dur="2.32">and there’s some really interesting stuff
+about corporate personhood</text><text start="65.36" dur="2.48">and, employees acting as a
+hive-mind there, and--</text><text start="67.84" dur="2.96">Anyway! Let’s talk 
+about the advertisers.</text><text start="70.8" dur="4.08">The first versions of the web 
+were simple. Text and images  </text><text start="74.88" dur="4.56">and links to other text and images. 
+You could use forms to send information,  </text><text start="79.44" dur="4.024">but the whole thing was ‘stateless’.
+This means neither the web browser</text><text start="83.464" dur="2.86">nor the web server kept track of you
+from one page to the next:</text><text start="86.324" dur="3.457">you just sent a request for a document,
+you got the document back,</text><text start="89.781" dur="2.786">and that was it. If you submitted a form,</text><text start="92.567" dur="3.086">that one response could be 
+tailored, but after that, nope,</text><text start="95.653" dur="2.983">the server’s forgotten about you
+because it can’t tell you apart</text><text start="98.636" dur="3.445">from anyone else who’s using the same network.</text><text start="102.081" dur="3.039">Now this wasn&amp;#39;t, long-term, a great plan.</text><text start="105.12" dur="2.64">In theory you could hack together 
+something more complicated,  </text><text start="107.76" dur="4.444">send forms back and forth, and people 
+did build things like that,</text><text start="112.204" dur="2.247">but they’d break very, very easily.</text><text start="114.451" dur="4.24">It was impossible to have something 
+both reliable and personalised.</text><text start="118.72" dur="3.52">Then in 1994, a programmer called 
+Lou Montulli, who was building a  </text><text start="122.24" dur="4.24">web browser at a company called 
+Netscape, came up with “cookies”,  </text><text start="126.48" dur="3.92">adapting an old computer science 
+technique called “magic cookies”.  </text><text start="130.4" dur="4.24">They were so useful that every other 
+browser started to use them as well,  </text><text start="134.64" dur="2.48">and they got built 
+into the web standards.</text><text start="138.16" dur="4.64">A cookie is “client-side storage”: 
+your web browser sends the request to  </text><text start="142.8" dur="3.03">the server, as usual, but the server sends back 
+two things:</text><text start="145.83" dur="1.725">the page you asked for,</text><text start="147.555" dur="4.603">and a little text file called a cookie 
+that your browser then saves.</text><text start="152.158" dur="4.482">After it’s saved, every time that browser 
+makes a request to that same server,  </text><text start="156.64" dur="4.48">it sends the cookie along with it. 
+So that cookie could contain your  </text><text start="161.12" dur="4.181">preferences: if you choose “dark mode”, 
+then the browser would now send a</text><text start="165.301" dur="3.896">“dark mode” preference, in that cookie,
+every single request.</text><text start="169.197" dur="2.57">If the server asked for it,
+then that cookie would last</text><text start="171.767" dur="3.033">even if you closed the browser,
+and restarted your computer.</text><text start="174.8" dur="2.956">For years and years and years.</text><text start="177.756" dur="2.964">Or a cookie could be used for 
+authentication: so after you’ve  </text><text start="180.72" dur="2.95">logged into a site, that site gives your 
+browser a cookie</text><text start="183.67" dur="2.735">that’s just a long, random string of characters.</text><text start="186.405" dur="5.309">But because no-one except the server and that cookie
+have that long string of characters,</text><text start="191.714" dur="4.926">it can act like a password: the browser sends it
+back along with every page request,  </text><text start="196.64" dur="3.68">and the server looks at it and 
+goes “oh, yeah, I remember you”.</text><text start="201.76" dur="4.72">The designers of cookies looked at that,
+and they knew that they could be used  </text><text start="206.48" dur="3.68">to track people, so there was a 
+very, very important rule for privacy:  </text><text start="210.16" dur="6.4">from the very start, only the site that set the 
+cookie can read the cookie back.</text><text start="216.56" dur="3.6">Except. Because of the way the web 
+is built, sites can include material  </text><text start="220.16" dur="3.6">from other servers. A web page can 
+pull in an image from somewhere else,  </text><text start="223.76" dur="3.68">or some scripting code, or even an 
+entire other web site, included in a frame.</text><text start="227.44" dur="5.28">And those other servers could 
+all set and read their own cookies.  </text><text start="232.72" dur="2.48">“Third-party cookies”, they were called.</text><text start="235.2" dur="6.16">So when web pages included advertising, 
+well, those adverts came from the advertising  </text><text start="241.36" dur="4.32">company’s servers, so those advertisers 
+could set a cookie that tracked people  </text><text start="245.68" dur="4.4">across the entire web. If the same 
+ad company partnered with loads  </text><text start="250.08" dur="5.36">of different web sites, they could start 
+building up some very detailed profiles.</text><text start="255.44" dur="4.72">No, they might not know who you 
+are at first. But they knew you visited  </text><text start="260.16" dur="3.68">that web site about your hometown, then
+you visited that web site about your college,  </text><text start="263.84" dur="4.654">and then you visited that web site about
+a very specific  medical condition.</text><text start="268.494" dur="2.421">Oh, and then you bought something
+from an online shop,</text><text start="270.915" dur="2.045">so they can work behind-the-scenes</text><text start="272.96" dur="2.421">combine the details from that shop
+and their cookies,</text><text start="275.381" dur="3.419">and add your name and address
+to the profile.</text><text start="278.8" dur="3.2">All those fancy “share with Facebook”
+buttons? Well, yeah, loads of them  </text><text start="282" dur="2.495">could report back to Facebook where
+you were going.</text><text start="284.495" dur="4.593">&amp;quot;Hey, this person&amp;#39;s looking at all these sites!
+So now you can tailor adverts for them!&amp;quot;</text><text start="289.088" dur="4.265">Which is why you could be on a site that seems
+to be completely disconnected from Facebook,</text><text start="293.353" dur="5.527">and still see adverts that were uncannily linked to 
+things you’ve been thinking about.</text><text start="299.92" dur="3.84">It took a long while before 
+regulators decided that,  </text><text start="303.76" dur="4.16">maybe, advertising companies having 
+enormous databases on basically  </text><text start="307.92" dur="4.48">everything that people were thinking 
+might be a bit of a privacy problem.</text><text start="312.4" dur="3.04">The European Union acted 
+first. The “Cookie Law”,  </text><text start="315.44" dur="4.663">which was the euphemistic name for, um,
+this mess...</text><text start="320.103" dur="3.257">meant that all the EU member 
+countries had to put a law in place  </text><text start="323.36" dur="3.375">requiring consent to place cookies.</text><text start="326.735" dur="2.073">That wasn’t particularly well-thought-out,</text><text start="328.808" dur="2.881">because “consent” requires clicking OK,</text><text start="331.689" dur="3.081">and if there’s a confusing box
+in between the average person</text><text start="334.77" dur="2.381">and the article they want to read,</text><text start="337.151" dur="2.849">look, nearly everyone is
+just going to just click OK.</text><text start="340" dur="3.12">And by this point, browser makers 
+were starting to give users options  </text><text start="343.12" dur="4">to block third-party cookies anyway,
+so advertisers were adjusting,  </text><text start="347.12" dur="3.33">they were tracking people not through cookies,
+but  through “fingerprinting”:</text><text start="350.45" dur="4.334">looking at all the apparently-innocent
+individual quirks</text><text start="354.784" dur="4.031">of how that exact computer was set up
+and how it rendered a web page.</text><text start="358.815" dur="4.19">The fonts you had installed, the size of your monitor, 
+the web sites you&amp;#39;ve visited in the past,</text><text start="363.005" dur="4.244">all things that individually appear 
+innocent and safe but which together</text><text start="367.249" dur="2.862">uniquely identify each person.</text><text start="370.111" dur="4.559">Browser makers and advertisers ended up in
+an odd war with each other about privacy:</text><text start="374.67" dur="4.005">occasionally a civil war, given that one of the 
+most popular browsers</text><text start="378.675" dur="4.365">and also one of the major advertising companies</text><text start="383.04" dur="3.52">were under the same corporate umbrella.</text><text start="386.56" dur="3.52">So later, the General Data 
+Protection Regulation, GDPR,  </text><text start="390.08" dur="2.987">put even stronger requirements in 
+place, at least for EU citizens.</text><text start="393.067" dur="4.773">Not just “no cookies without consent”:
+no  tracking without consent. At all times,  </text><text start="397.84" dur="2.909">the user must have full knowledge 
+what they are signing up for,</text><text start="400.749" dur="3.402">and must consent to it.
+Even if the company’s not in the EU.</text><text start="404.151" dur="3.619">Even if they’re storing data
+on EU citizens &amp;quot;outside&amp;quot;,</text><text start="407.77" dur="1.121">it still applies to them.</text><text start="408.891" dur="4.158">The potential maximum fine is 4% of the
+company’s global annual revenue.</text><text start="413.049" dur="1.516">Not profit, revenue.</text><text start="414.565" dur="3.451">Or €20 million, whichever is higher.</text><text start="418.016" dur="4.007">And yeah, sure, maybe the EU couldn’t
+easily fine an all-American company,</text><text start="422.023" dur="4.217">but they can definitely stop them
+doing business in Europe if they don&amp;#39;t pay.</text><text start="426.24" dur="2.513">So all the advertisers had two options.</text><text start="428.753" dur="2.724">Number one: stop tracking people!</text><text start="431.477" dur="4.261">Or number two, add a big box on each page
+saying “hey, is it OK if we track you?”</text><text start="435.738" dur="2.627">And legally, you should 
+be able to easily say no</text><text start="438.365" dur="3.964">and still access the site. Opting out should 
+be a simple, one-click process.  </text><text start="442.329" dur="4.272">And anyone who’s been on the web 
+lately knows that’s often not true.</text><text start="446.601" dur="4.719">So, yes, at least some of those popups
+and frustrations are because of advertisers.</text><text start="451.32" dur="3.48">Certainly, they normalised 
+the idea of intrusive popup boxes.</text><text start="455.84" dur="2.88">But why can they put those 
+boxes there in the first place?</text><text start="459.6" dur="3.6">The web is built around freedom 
+of design. It’s one of the most  </text><text start="463.2" dur="4.8">fundamental principles: within the 
+box that the web browser gives you,  </text><text start="468" dur="3.12">a designer can put almost anything.  </text><text start="471.12" dur="2.215">For decade after decade after decade,</text><text start="473.335" dur="2.991">programmers have pushed the limits
+of what’s possible:</text><text start="476.326" dur="4.877">someone has even managed to emulate an
+entire Windows 95 computer in the web browser.</text><text start="481.203" dur="3.367">I don’t mean just making a web page
+look like Windows 95,</text><text start="484.57" dur="5.131">I mean an entire virtual machine that thinks
+it’s running on regular computer hardware</text><text start="489.701" dur="4.219">but is actually just simulated
+in code, in a web browser.</text><text start="493.92" dur="1.44">And that&amp;#39;s incredible!</text><text start="495.36" dur="3.425">Give people power to create and 
+some will make amazing things.</text><text start="498.785" dur="3.788">But some will look at the ability 
+to run almost any code</text><text start="502.573" dur="3.683">and put almost anything on screen,
+at least within that box, and go</text><text start="506.256" dur="3.567">“maybe I can get some more newsletter signups
+if I interrupt the reader”.</text><text start="509.823" dur="4.12">Or &amp;quot;maybe I can make people’s browsers
+mine cryptocurrency in the background</text><text start="513.943" dur="1.417">&amp;quot;while they’re on my site!&amp;quot;</text><text start="516.56" dur="2.659">So the war starts again.</text><text start="519.219" dur="3.705">Most web browsers now have a separate view
+that you can switch into,</text><text start="522.924" dur="1.836">that shows just 
+the text you want.</text><text start="524.76" dur="2.59">It might be called “article view” or “reader mode”.</text><text start="527.35" dur="4.478">The browser tries to figure out what the main content is,
+what the user actually wants to see,</text><text start="531.828" dur="2.043">and puts just that text on screen.</text><text start="533.871" dur="3.329">Stripping out the adverts, 
+removing all the popup boxes, and,</text><text start="537.2" dur="3.36">yes, losing all the creativity 
+and design that the web allows.  </text><text start="540.56" dur="4.96">But that ‘reader view’ is a lot closer 
+to Tim Berners-Lee’s original design:  </text><text start="545.52" dur="3.04">a place for information, and 
+a way to find it afterwards.</text><text start="549.44" dur="3.68">Of course, there are already techniques 
+to detect and defeat reader view,  </text><text start="553.12" dur="4.56">and make sure that the user has to see the 
+adverts, or the newsletter popups, or  </text><text start="557.68" dur="0.88">whatever else.</text><text start="559.28" dur="4.48">Every bit of freedom that a 
+designer has for creativity and good  </text><text start="563.76" dur="3.6">is also freedom for abuse. 
+That’s true not just on the web,  </text><text start="567.36" dur="2.88">but in every single aspect 
+of the online world.</text></transcript>

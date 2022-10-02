@@ -1,0 +1,3 @@
+Created: 2016-2018
+
+Inspiration: When I first got a Ti-83 calculator for highschool, I quickly learned of the TI-BASIC functionality that was built into it. One summer, I programmed tic-tac-toe onto it to figure out how it worked. Programming things on it quickly became among my favourite ways to spend extra time during school, and even helped me to better understand topics that we were covering.

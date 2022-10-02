@@ -1,0 +1,1 @@
+Due to school policy, no school projects can be in a public github repository. However, source code can be viewed upon request by an employer.
