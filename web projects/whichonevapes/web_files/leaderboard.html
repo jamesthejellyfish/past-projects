@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Leaderboard - Which One Vapes</title>
+    <link rel="icon" type="image/png" sizes="800x845" href="assets/img/vape.png">
+    <link rel="icon" type="image/png" sizes="800x845" href="assets/img/vape.png">
+    <link rel="icon" type="image/png" sizes="800x845" href="assets/img/vape.png">
+    <link rel="icon" type="image/png" sizes="800x845" href="assets/img/vape.png">
+    <link rel="icon" type="image/png" sizes="800x845" href="assets/img/vape.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Autour+One">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="index.html" style="font-family: 'Autour One', cursive;">Which One Vapes?</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="leaderboard.html">Leaderboard</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="search.html">Search</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+        </div><a class="text-dark" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" href="https://www.buymeacoffee.com/jamescox" style="width: 30px;" title="Buy Me a Coffee"><i class="fa fa-coffee" style="transform: scale(1.5);"></i></a></div>
+    </nav>
+    <main class="page">
+        <section class="clean-block features">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Leaderboard</h2>
+                    <p>A place where you can check the stats of which people are most likely to vape.<br>The Lower the rank, the more likely they are to vape.</p>
+                </div>
+                <div class="d-md-flex d-lg-flex d-xl-flex justify-content-md-center justify-content-lg-center justify-content-xl-center"><select class="form-control-lg" id="type" style="margin-left: 11px;margin-right: 11px;" onchange="leaderboard(this.value)"><option value="cheese" selected="">Select One</option><option value="">Overall</option><option value="Actor">Actor</option><option value="Actress">Actress</option><option value="Star">Web Video Star</option><option value="Singer">Singer</option><option value="Podcaster">Podcaster</option></select>
+                    <select
+                        class="form-control-lg" id="sort" style="margin-left: 11px;margin-right: 11px;" onchange="leaderboard(&quot;no&quot;)">
+                        <option value="DESC" selected="">Sort by:</option>
+                        <option value="DESC">Most Likely</option>
+                        <option value="ASC">Least Likely</option>
+                        </select><select class="form-control-lg" id="items" style="margin-left: 11px;margin-right: 11px;" onchange="leaderboard(&quot;no&quot;)"><option value="10" selected="">Number of Items:</option><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></div>
+            </div><script>
+    function leaderboard(str) {
+	document.cookie = "sort="+document.getElementById("sort").value;
+	document.cookie = "items="+document.getElementById("items").value;
+  if (str == "no") {
+    str = document.getElementById("type").value;
+  }
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("leaderboard").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET","leaderboard.php?q="+str,true);
+    xmlhttp.send();
+}
+</script>
+            <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center" id="leaderboard" style="margin-top: 23px;"></div>
+        </section>
+    </main>
+    <footer class="page-footer dark" style="margin-top: 91px;">
+        <div class="footer-copyright">
+            <p>Designed by James Cox © 2020</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/Functions.js"></script>
+</body>
+
+</html>

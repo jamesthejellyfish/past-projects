@@ -1,0 +1,5 @@
+created: summer 2021
+motivation: when my mother was creating a family tree, she mentioned that
+there wasn't a lot of good genogram software available online. I decided to
+try my hand at creating one, mostly as a personal exercise. This was my
+first try at creating svg web elements which update dynamically.

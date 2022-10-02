@@ -1,0 +1,4 @@
+created: July 2020
+
+motivation: based off of a joke from a podcast that I thought would be a
+good entry-point for me to learn how to work with MySQL. Site can be accessed at whichonevapes.ca
